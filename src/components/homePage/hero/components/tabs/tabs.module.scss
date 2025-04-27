@@ -1,0 +1,67 @@
+@use '@styles/_extends';
+@use '@styles/_vars';
+.container {
+  @extend %text-cap;
+  .bar{
+    .indicator{
+      background-color: #fff;
+      height: 1.2rem;
+      bottom: -.5rem;
+      transition-duration: 0.1s;
+    }
+    .scroller{
+      overflow: unset !important;
+    }
+    .tabs-root{
+      min-height: 0;
+    }
+    &__tab{
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #323232;
+      padding: .7rem 2rem;
+      display: block;
+      border-radius: .2rem;
+      background: #ffffff;
+      margin: 0 .5rem .5rem 0;
+      min-height: 0;
+    }
+  }
+  .tab-panel{
+    background-color: #fff;
+    padding: 4.2rem 4rem 5rem;
+    border-radius: .2rem;
+    @media only screen and (max-width: 479px){
+      padding: 4.2rem 2rem 5rem;
+    }
+    h2{
+      color: #323232;
+      font-weight: 700;
+      margin-bottom: 2.2rem;
+      font-size: 3.6rem;
+    }
+    .select-list{
+      margin-right: -2rem;
+      width: auto;
+      @media only screen and (max-width: 479px){
+        margin-right: 0;
+      }
+      &__item{
+        max-width: calc(50% - 2rem);
+        margin: 0 2rem 2rem 0;
+        @media only screen and (max-width: 479px){
+          max-width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+    .car-price{
+      margin-bottom: 4.5rem;
+    }
+    .submit-btn{
+      @extend %primary-btn;
+      @extend %text-cap;
+      padding: 1.5rem 3.8rem;
+    }
+  }
+}

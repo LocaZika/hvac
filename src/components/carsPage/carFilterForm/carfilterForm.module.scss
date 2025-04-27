@@ -1,0 +1,46 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.container{
+  h5{
+    font-size: 20px;
+    color: #353535;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  button{
+    @extend %primary-btn;
+    @extend %text-cap;
+    width: 100%;
+  }
+  .btn{
+    padding: 0 3rem;
+    @media only screen and (max-width: 991px) {
+      padding: 0 9rem;
+    }
+  }
+  form{
+    .select{
+      font-size: 15px;
+      color: #727171;
+      padding-left: 20px;
+      height: 46px;
+      background: $clr-white;
+      line-height: 46px;
+      margin-bottom: 10px;
+      border-radius: .2rem;
+      .item{
+        padding: 0;
+      }
+      fieldset{
+        border: 1px solid #ebebeb;
+      }
+    }
+    .price-range{
+      margin-bottom: 3rem;
+      padding-bottom: .8rem;
+    }
+    button[type='submit']{
+      margin-bottom: 3rem;
+    }
+  }
+}

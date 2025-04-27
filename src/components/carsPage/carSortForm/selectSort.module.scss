@@ -1,0 +1,39 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+%item{
+  span{
+    font-size: 1.5rem;
+    @extend %text-cap;
+  }
+}
+.container{
+  &.right{
+    text-align: right;
+    @media only screen and (max-width: 767px) {
+      text-align: unset;
+      padding-top: 2rem;
+    }
+  }
+  h6{
+    font-size: 15px;
+    color: #353535;
+    font-weight: 700;
+    @extend %d-inline;
+    margin-right: 15px;
+  }
+  .select-root{
+    border-radius: 0;
+  }
+  .select-item{
+    line-height: 3.6rem;
+    padding: 0 5rem 0 2rem;
+    background-color: $clr-white;
+    @extend %item;
+  }
+  fieldset{
+    border: .1rem solid #ebebeb;
+  }
+}
+.item{
+  @extend %item;
+}

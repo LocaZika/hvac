@@ -1,0 +1,17 @@
+"name": "bmw 735i m sport",
+"brand": "bmw",
+"price": 176671.51,
+"transmission": "auto",
+"tradeType": "sale",
+"fuelType": "gasoline",
+"type": "sedan",
+"hp": 286,
+"model" : 2023,
+"mileage": 13552,
+"imgs": [
+  {"_id": "1", "path": "1.jpg"},
+  {"_id": "2", "path": "2.jpg"}
+],
+"detailImgs": [
+  {"_id": "1", "path": "detail.jpg"}
+]

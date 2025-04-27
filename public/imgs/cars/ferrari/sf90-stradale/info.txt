@@ -1,0 +1,21 @@
+"name": "ferrari SF90 stradale",
+"brand": "ferrari",
+"price": 990000,
+"transmission": "auto",
+"tradeType": "sale",
+"fuelType": "electric",
+"type": "sport",
+"hp": 986,
+"model" : 2020,
+"mileage": 10645,
+"imgs": [
+  {"_id": "1", "path": "1.jpg"},
+  {"_id": "2", "path": "2.jpg"},
+  {"_id": "3", "path": "3.jpg"},
+],
+"detailImgs": [
+  {"_id": "1", "path": "detail-1.jpg"},
+  {"_id": "2", "path": "detail-2.jpg"},
+  {"_id": "3", "path": "detail-3.jpg"},
+  {"_id": "4", "path": "detail-4.jpg"}
+]

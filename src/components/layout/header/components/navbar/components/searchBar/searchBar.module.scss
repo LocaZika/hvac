@@ -1,0 +1,40 @@
+@use "@styles/_vars" as *;
+@use "@styles/_extends";
+.container{
+  .searchBtn{
+    button{
+      background-color: transparent;
+    > svg{
+        height: 1.5rem;
+        color: $clr-black-font;
+      }
+    }
+  }
+}
+.search-dialog{
+  @extend %d-flex;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  background-color: transparent;
+  &__close-btn{
+    top: 0;
+    width: 5rem;
+    height: 5rem;
+    background-color: #333;
+    border-radius: 50%;
+    color: #fff;
+  }
+  &__form{
+    margin: auto 0;
+    padding: 0 1.5rem;
+    input[type='text']{
+      width: 100%;
+      font-size: 4.0rem;
+      border: none;
+      border-bottom: .2rem solid #ededed;
+      background: 0 0;
+      color: #999;
+    }
+  }
+}

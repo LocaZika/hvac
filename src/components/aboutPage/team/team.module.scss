@@ -1,0 +1,32 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.container{
+  padding-bottom: 7rem;
+  [class='section-title']{
+    margin-bottom: 5rem;
+  }
+  .item{
+    margin-bottom: 3rem;
+    border-radius: .2rem;
+    padding: 0 1.5rem;
+    img{
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .info{
+      padding-top: 2rem;
+      text-align: center;
+      h5{
+        font-size: 2rem;
+        color: #353535;
+        font-weight: 700;
+        margin-bottom: .5rem;
+      }
+      span{
+        font-size: 1.5rem;
+        color: #727171;
+        @extend %text-cap;
+      }
+    }
+  }
+}

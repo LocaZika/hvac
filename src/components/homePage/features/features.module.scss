@@ -1,0 +1,87 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.container{
+  background: #f7f7f7;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 55px;
+  overflow: hidden;
+  &::after{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 605px;
+    height: 404px;
+    background-image: url(\/imgs/features/car.png);
+    content: "";
+    -webkit-transform: translate(-300px, -202px);
+    -ms-transform: translate(-300px, -202px);
+    transform: translate(-300px, -202px);
+    z-index: -1;
+    @media only screen and (max-width: 479px) {
+      display: none;
+    }
+  }
+  .text{
+    @media only screen and (max-width: 991px){
+      margin-bottom: 50rem;
+    }
+    @media only screen and (min-width: 375px) and (max-width: 479px){
+      margin-bottom: 4rem;
+    }
+    &__title{
+      text-align: left;
+      margin-bottom: 34px;
+      h2{
+        margin-bottom: 0;
+      }
+    }
+    &__desc{
+      margin-bottom: 35px;
+      p{
+        margin-bottom: 30px;
+      }
+    }
+    &__btn{
+      a{
+        @extend %primary-btn;
+        @extend %text-cap;
+        margin-right: 16px;
+      }
+    }
+  }
+  .item{
+    text-align: center;
+    float: right;
+    margin-bottom: 45px;
+    @media only screen and (max-width: 767px){
+      float: none;
+    }
+    &__icon{
+      height: 100px;
+      width: 100px;
+      background: #ffffff;
+      border-radius: 50%;
+      line-height: 100px;
+      text-align: center;
+      margin: 0 auto 2rem auto;
+      &__container{
+        @extend %pos-rel;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img{
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+    h6{
+      font-size: 15px;
+      color: #353535;
+      font-weight: 700;
+    }
+  }
+}

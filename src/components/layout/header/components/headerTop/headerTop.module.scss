@@ -1,0 +1,69 @@
+@use '@styles/_extends';
+@use '@styles/_vars'as *;
+.container{
+  @extend %d-block;
+  background-color: $clr-black;
+  @media only screen and (max-width: 991px){
+    display: none;
+  }
+}
+.icon{
+  height: 1.5rem;
+  color: #8d8d8d;
+  margin-right: 0.6rem;
+}
+.left{
+  padding: 1.2rem 0 1.4rem;
+  ul li{
+    @extend %d-inline;
+    margin-right: 3.5rem;
+    &:last-child{
+      margin-right: 0;
+      .contact-container a::first-letter{
+        @extend %text-lower;
+      }
+    }
+    font-size: 1.5rem;
+    .contact-container{
+      @extend %d-flex;
+      align-items: center;
+      svg{
+        height: 1.8rem;
+      }
+      span, a{
+        @extend %d-inline;
+        color: $clr-white;
+        &::first-letter{
+          @extend %text-upper;
+        }
+      }
+    }
+  }
+}
+.right{
+  @extend %d-flex;
+  justify-content: end;
+  &__phone{
+    padding: 1.4rem 0 1.2rem;
+    margin-right: 2rem;
+    a{
+      font-size: 1.5rem;
+      color: $clr-white;
+    }
+  }
+  &__socials{
+    @extend %d-flex;
+    align-items: center;
+    a{
+      svg{
+        margin-right: 1.6rem;
+        color: $clr-white;
+      }
+      &:last-child{
+        svg{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

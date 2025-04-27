@@ -1,0 +1,15 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.container{
+  padding-bottom: 7rem;
+  [class='section-title']{
+    margin-bottom: 4.5rem;
+  }
+  .item{
+    border: 1px solid #ebebeb;
+    margin-bottom: 30px;
+    height: 110px;
+    align-content: center;
+    text-align: center;
+  }
+}

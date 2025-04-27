@@ -1,0 +1,34 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.container{
+  @extend %d-block;
+  .service-item{
+    @extend %pos-rel;
+    text-align: center;
+    padding: 3.6rem 3.5rem 4rem;
+    border: .1rem solid #ebebeb;
+    border-radius: .2rem;
+    -webkit-transition: all, 0.4s;
+    -o-transition: all, 0.4s;
+    transition: all, 0.4s;
+    margin-bottom: 4rem;
+    cursor: default;
+    &:hover{
+      -webkit-box-shadow: 0rem .6rem 5rem rgba(50, 15, 15, .05);
+      box-shadow: 0rem .6rem 5rem rgba(50, 15, 15, .05);
+      border: .1rem solid transparent;
+    }
+    h5{
+      font-size: 2rem;
+      color: #323232;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      margin-top: 2rem;
+      @extend %text-cap;
+    }
+    p{
+      margin-bottom: 2rem;
+      color: #8d8d8d;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.container{
+  padding-bottom: 12rem;
+  .title{
+    margin-bottom: 2rem;
+    h2{
+      margin-bottom: 0;
+    }
+  }
+  .filter__control{
+    margin-bottom: 4rem;
+    @extend %pos-rel;
+    text-align: center;
+    div[role='tablist']{
+      justify-content: center;
+    }
+    .indicator{
+      @extend %pos-abs;
+      background: $clr-red;
+      height: .2rem;
+      bottom: 0;
+      transition: all 0.2s linear;
+    }
+    button{
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #8d8d8d;
+      font-weight: 700;
+      margin-right: 50px;
+      padding: 4px 0;
+      cursor: pointer;
+      background-color: transparent;
+      @media only screen and (max-width: 479px){
+        margin-right: 1.5rem;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      &.active{
+        color: #323232;
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.btn{
+  @extend %d-inline;
+  font-size: 2.2rem;
+  color: #323232;
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  border: .1rem solid #323232;
+  border-radius: .2rem;
+  background-color: transparent;
+}
+.drawer{
+  background: #ffffff;
+  padding: 5rem 3rem 3rem;
+  @extend %d-block;
+  svg{
+    color: $clr-black-font;
+    font-size: 1.8rem;
+    margin-right: .6rem;
+  }
+  .widget{
+    margin-bottom: 3rem;
+    >div{
+      @extend %d-inline;
+      margin-right: 2rem;
+    }
+  }
+  .logo{
+    margin-bottom: 3rem;
+  }
+  .menu{
+    font-size: 1.6rem;
+    background: #4c4c4c;
+    padding: .5rem;
+    text-align: right;
+    &__btn{
+      margin: .5rem .5rem .6rem;
+      text-shadow: 0 .1rem .1rem rgba(255, 255, 255, .75);
+      -webkit-border-radius: .4rem;
+      -moz-border-radius: .4rem;
+      border-radius: .4rem;
+      background-color: #222;
+      padding: .701rem 1rem;
+      line-height: 1.9rem;
+      &__text{
+        line-height: 1.9em;
+        color: #fff;
+        font-weight: 700;
+        text-shadow: 0 .1rem .3rem #000;
+        font-size: 1.6rem;
+        @extend %text-upper;
+      }
+      >svg{
+        color: #fff;
+        margin: .3rem 0 0 .7rem;
+      }
+    }
+    &__list{
+      margin-left: 2rem;
+      li{
+        text-align: left;
+        a{
+          display: block;
+          font-size: 1.4rem;
+          color: #fff;
+          padding: .5rem 1rem;
+          margin: .2rem .5rem;
+          &::first-letter{
+            @extend %text-upper;
+          }
+        }
+      }
+    }
+  }
+  .schedule, .contact-email, .contact-phone{
+    font-size: 1.5rem;
+    color: $clr-black-font;
+    line-height: 3rem;
+  }
+  .contact-email, .contact-phone{
+    margin-bottom: 2rem;
+    > a{
+      color: $clr-black-font;
+    }
+  }
+  .socials{
+    ul > li{
+      display: inline-block;
+      a{
+        margin-right: 1.6rem;
+        svg{
+          font-size: 1.5rem;
+          color: #353535;
+        }
+      }
+    }
+  }
+}

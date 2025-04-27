@@ -1,0 +1,22 @@
+"name": "honda CR-V  EX-L",
+"brand": "honda",
+"price": 35000,
+"transmission": "auto",
+"tradeType": "sale",
+"fuelType": "electric",
+"type": "suv",
+"hp": 190,
+"model" : 2024,
+"mileage": 14300,
+"imgs": [
+  {"_id": "1", "path": "1.jpg"},
+  {"_id": "2", "path": "2.jpg"},
+  {"_id": "3", "path": "3.jpg"},
+],
+"detailImgs": [
+  {"_id": "1", "path": "detail-1.jpg"},
+  {"_id": "2", "path": "detail-2.jpg"},
+  {"_id": "3", "path": "detail-3.jpg"},
+  {"_id": "4", "path": "detail-4.jpg"},
+  {"_id": "5", "path": "detail-5.jpg"},
+]

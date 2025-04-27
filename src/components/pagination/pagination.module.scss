@@ -1,0 +1,30 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.pagination-list{
+  li{
+    >button{
+      height: 50px;
+      width: 50px;
+      font-size: 18px;
+      color: #727171;
+      font-weight: 700;
+      border: 1px solid #ebebeb;
+      background-color: transparent !important;
+      border-radius: 2px;
+      line-height: 50px;
+      margin-left: .2rem;
+      margin-right: 6px;
+      -webkit-transition: all, 0.3s;
+      -o-transition: all, 0.3s;
+      transition: all 0.3s;
+      &:hover{
+        border-color: #db2d2e;
+        color: #353535;
+      }
+      &[class~="Mui-selected"]{
+        border-color: #db2d2e;
+        color: #353535;
+      }
+    }
+  }
+}

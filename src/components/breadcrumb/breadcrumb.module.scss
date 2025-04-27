@@ -1,0 +1,38 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.container{
+  padding: 7rem 0;
+  background-image: url('/imgs/breadcrumb-bg.jpg');
+  .text{
+    @extend %text-cap;
+    h1{
+      color: $clr-white;
+      font-weight: 700;
+      font-size: 4.6rem;
+      margin-bottom: .6rem;
+      @media only screen and (max-width: 479px){
+        font-size: 3.4rem;
+      }
+    }
+    .link{
+      a{
+        font-size: 1.5rem;
+        color: $clr-white;
+        svg{
+          color: $clr-red;
+          margin-right: .5rem;
+          font-size: 1.2rem;
+          margin-bottom: .1rem;
+          &:last-child{
+            color: $clr-white;
+            margin-left: .5rem;
+          }
+        }
+      }
+      span{
+        font-size: 1.5rem;
+        color: #727171;
+      }
+    }
+  }
+}

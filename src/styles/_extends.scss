@@ -1,0 +1,44 @@
+/***DISPLAY***/
+%d-flex{
+  display: flex;
+}
+%d-none{
+  display: none;
+}
+%d-inline{
+  display: inline-block;
+}
+%d-block{
+  display: block;
+}
+/***DISPLAY***/
+/***TEXT***/
+%text-upper{
+  text-transform: uppercase;
+}
+%text-cap{
+  text-transform: capitalize;
+}
+%text-lower{
+  text-transform: lowercase;
+}
+/***TEXT***/
+/***POSITION***/
+%pos-rel{
+  position: relative;
+}
+%pos-abs{
+  position: absolute;
+}
+/***POSITION***/
+/***button***/
+%primary-btn{
+  @extend %d-inline;
+  font-size: 1.5rem;
+  padding: 1.2rem 2.4rem;
+  color: #ffffff;
+  font-weight: 700;
+  background: #db2d2e;
+  border-radius: .2rem;
+}
+/***button***/

@@ -1,0 +1,71 @@
+@use "@styles/_extends";
+@use "@styles/_vars" as *;
+.navbar{
+  @media only screen and (max-width: 991px){
+    justify-content: space-between;
+  }
+  &__pc{
+    @media only screen and (max-width: 991px){
+      display: none;
+    }
+    .nav-container{
+      text-align: right;
+      padding: 3.2rem 0 3.3rem;
+      .menu, .widget{
+        @extend %d-inline;
+      }
+      .menu{
+        ul{
+          li{
+            @extend %d-inline;
+            .menu__item{
+              @extend %pos-rel;
+              margin-right: 6rem;
+              font-size: 1.5rem;
+              color: $clr-black-font;
+              font-weight: 700;
+              padding: 0.5rem 0;
+              @extend %text-upper;
+              &::after{
+                content: ' ';
+                @extend %pos-abs;
+                width: 0;
+                height: 0.2rem;
+                bottom: 0;
+                left: 0;
+                background-color: $clr-red;
+                transition: width 0.5s linear;
+              }
+              &:hover{
+                &::after{
+                  width: 100%;
+                }
+              }
+              &.active{
+                &::after{
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .widget{
+        >div{
+          @extend %d-inline;
+        }
+        &-item{
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+  &__mb{
+    @extend %d-none;
+    @media only screen and (max-width: 991px){
+      display: block;
+      text-align: right;
+    }
+    padding: 3.5rem 0;
+  }
+}

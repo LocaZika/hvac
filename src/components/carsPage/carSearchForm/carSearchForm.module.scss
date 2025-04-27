@@ -1,0 +1,46 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.container{
+  margin-bottom: 4rem;
+  h5{
+    font-size: 2rem;
+    color: #353535;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  form{
+    border: .1rem solid #ebebeb;
+    input{
+      padding: 1.5rem 0 1.5rem 2rem;
+      font-size: 1.5rem;
+      color: #727171;
+      background-color: $clr-white;
+      border-right: .1rem solid #ebebeb;
+      width: 80%;
+      @media only screen and (max-width: 991px){
+        width: 90%;
+      }
+      @media only screen and (max-width: 450px){
+        width: 80%;
+      }
+    }
+    button{
+      height: 100%;
+      width: 20%;
+      font-size: 1.5rem;
+      color: #AAAAB3;
+      background-color: $clr-white;
+      border: none;
+      padding: 1.5rem;
+      @media only screen and (max-width: 1199px){
+        padding: 1.5rem 0;
+      }
+      @media only screen and (max-width: 991px){
+        width: 10%;
+      }
+      @media only screen and (max-width: 450px){
+        width: 20%;
+      }
+    }
+  }
+}

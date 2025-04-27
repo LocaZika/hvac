@@ -1,0 +1,55 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.contact{
+  .text{
+    margin-bottom: 3rem;
+    padding-right: 1.5rem;
+    @media only screen and (max-width: 767px){
+      padding-right: 0;
+    }
+    [class='section-title']{
+      text-align: left;
+      margin-bottom: 3.6rem;
+    }
+    ul li{
+      font-size: 1.5rem;
+      color: #353535;
+      line-height: 3.6rem;
+      span{
+        color: $clr-gray;
+        @extend %d-inline;
+        width: 8.5rem;
+        &::first-letter{
+          @extend %text-cap;
+        }
+      }
+    }
+  }
+  //form style
+}
+.address{
+  padding-bottom: 7rem;
+  .text{
+    border-top: .1rem solid rgba(0, 0, 0, 0.1);
+    padding-top: 10rem;
+    .item{
+      margin-bottom: 3rem;
+      h4{
+        color: #353535;
+        font-weight: 700;
+        margin-bottom: 1.8rem;
+        font-size: 2.4rem;
+        @extend %text-cap;
+      }
+      p{
+        line-height: 3.2rem;
+        margin-bottom: .5rem;
+      }
+      a{
+        font-size: 1.8rem;
+        color: #353535;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+%bg{
+  @extend %pos-abs;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container{
+  @extend %pos-rel;
+  padding: 14rem 0;
+  .background{
+    @extend %bg;
+    height: 100%;
+    z-index: -1;
+  }
+  .content{
+    color: $clr-white;
+    padding-top: 11rem;
+    &__title{
+      margin-bottom: 2.8rem;
+      span{
+        font-size: 2rem;
+        font-weight: 700;
+        @extend %text-upper;
+      }
+      h2{
+        font-size: 6rem;
+        @extend %text-cap;
+        font-weight: 700;
+        margin-top: 1rem;
+        color: $clr-white;
+        @media only screen and (max-width: 479px){
+          font-size: 3.8rem;
+        }
+      }
+    }
+    &__price{
+      @extend %pos-rel;
+      padding-left: 14rem;
+      margin-bottom: 5.5rem;
+      @media only screen and (max-width: 479px){
+        padding-left: 0;
+      }
+      &__model{
+        font-size: 1.3rem;
+        color: #323232;
+        font-weight: 700;
+        display: inline-block;
+        padding: .6rem 1.4rem;
+        background: #ffffff;
+        border-radius: .2rem;
+        @extend %pos-abs;
+        @extend %text-cap;
+        left: 0;
+        top: 0;
+        @media only screen and (max-width: 479px){
+          position: relative;
+        }
+      }
+      h2{
+        font-size: 5rem;
+        color: #ffffff;
+        font-weight: 700;
+        line-height: 4.5rem;
+        span{
+          font-size: 4rem;
+          @extend %text-cap;
+        }
+        @media only screen and (max-width: 479px){
+          margin-top: 2rem;
+          font-size: 3.4rem;
+        }
+      }
+    }
+    &__link{
+      background: transparent;
+      border: .1rem solid #ffffff;
+      margin-right: 1.6rem;
+      @extend %primary-btn;
+      @extend %text-cap;
+    }
+    @media only screen and (max-width: 991px) {
+      padding-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import "@styles/_extends";
+%li-sidebar{
+  font-size: 1.5rem;
+  color: #727171;
+  line-height: 3.6rem;
+  overflow: hidden;
+  @extend %d-block;
+  &::first-letter{
+    @extend %text-upper;
+  }
+  span{
+    color: #353535;
+    font-weight: 700;
+    float: right;
+    @extend %text-upper;
+  }
+}
+%p-sidebar{
+  color: #353535;
+  padding: 1rem 0;
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.car-detail{
+  padding-bottom: 7rem;
+  &__pics{
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  &__info{
+    h3{
+      font-size: 2.4rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding: 2.2rem 3rem 1.6rem;
+      background-color: #f7f7f7;
+    }
+    &__item{
+      img{
+        position: unset !important;
+      }
+    }
+  }
+  &__sidebar{
+    padding: 2.5rem 3rem 2rem;
+    background-color: #f7f7f7;
+    &__model{
+      margin-bottom: .5rem;
+      ul{
+        border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+        padding-bottom: .6rem;
+        li{
+          @extend %li-sidebar;
+        }
+      }
+      p{
+        @extend %p-sidebar;
+      }
+    }
+    &__trade-type{
+      p{
+        @extend %p-sidebar;
+        font-weight: 600;
+        font-size: 1.8rem;
+        @extend %text-cap;
+      }
+    }
+    &__payment{
+      ul{
+        margin-bottom: 3rem;
+        li{
+          @extend %li-sidebar;
+          &:first-child{
+            @extend %text-upper;
+          }
+        }
+      }
+      a{
+        @extend %primary-btn;
+        @extend %d-block;
+        border-radius: 0;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 1.2rem 0 1rem;
+        @extend %text-cap;
+        svg{
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+}

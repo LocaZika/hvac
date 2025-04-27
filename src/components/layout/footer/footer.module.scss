@@ -1,0 +1,136 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.container{
+  padding: 6rem 0 3rem;
+  .contact{
+    padding-bottom: 6rem;
+    margin-bottom: 6.5rem;
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.2);
+    .title{
+      @extend %text-cap;
+      @media only screen and (max-width: 767px){
+        margin-bottom: 2rem;
+      }
+      h2{
+        font-size: 40px;
+        color: #ffffff;
+        font-weight: 700;
+      }
+    }
+    .option{
+      text-align: right;
+      @media only screen and (max-width: 767px){
+        text-align: left;
+      }
+      &__item{
+        font-size: 15px;
+        background-color: #db2d2e;
+        @extend %d-inline;
+        font-weight: 700;
+        padding: 14px 18px 14px 24px;
+        margin-right: 16px;
+        border-radius: 2px;
+        color: $clr-white;
+        &:last-child{
+          margin-right: 0;
+        }
+        @media only screen and (max-width: 991px) {
+          margin-right: 0;
+          width: 60%;
+          text-align: center;
+          margin-bottom: 1.6rem;
+        }
+        @media only screen and (max-width: 767px){
+          margin-right: 16px;
+          width: auto;
+        }
+        svg{
+          margin-right: 5px;
+        }
+        &.email{
+          color: #323232;
+          background-color: #ffffff;
+          svg{
+            color: #db2d2e;
+          }
+        }
+      }
+    }
+  }
+  .copyright{
+    p{
+      svg, span{
+        color: $clr-red;
+        font-weight: 700;
+      }
+    }
+  }
+  .about{
+    margin-bottom: 3rem;
+    .logo{
+      margin-bottom: 2rem;
+      @extend %d-inline;
+      @extend %pos-rel;
+      height: 4rem;
+      width: 13.2rem;
+    }
+    p{
+      color: #8d8d8d;
+      margin-bottom: 2.5rem;
+    }
+    .social{
+      margin-bottom: 2rem;
+      a{
+        display: inline-block;
+        height: 38px;
+        width: 38px;
+        font-size: 15px;
+        color: $clr-white;
+        line-height: 38px;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 6px;
+        &.fb{
+          background-color: #324975;
+        }
+        &.tw{
+          background-color: #2C85AE;
+        }
+        &.gg{
+          background-color: #DC4438;
+        }
+        &.sp{
+          background-color: #3EAFF0;
+        }
+      }
+    }
+  }
+  .widget{
+    margin-bottom: 3rem;
+    @extend %text-cap;
+    h5{
+      color: $clr-white;
+      font-weight: 700;
+      margin-bottom: .8rem;
+      font-size: 1.8rem;
+    }
+    ul{
+      li{
+        a{
+          font-size: 15px;
+          color: #8d8d8d;
+          line-height: 36px;
+        }
+        svg{
+          margin-right: .2rem;
+        }
+      }
+      &.brand{
+        @extend %d-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 17.5rem;
+      }
+    }
+  }
+}

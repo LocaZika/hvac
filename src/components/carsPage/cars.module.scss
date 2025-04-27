@@ -1,0 +1,23 @@
+@use '@styles/_extends';
+@use '@styles/_vars' as *;
+.container{
+  padding-bottom: 12rem;
+  .sidebar{
+    background: #f7f7f7;
+    padding: 3rem;
+    @media only screen and (max-width: 991px){
+      margin-bottom: 4rem;
+    }
+  }
+  .sort{
+    background: #f7f7f7;
+    padding: 12px 30px;
+    margin-bottom: 30px;
+  }
+  .cars{
+    display: block;
+  }
+  .pagination{
+    padding-top: 2rem;
+  }
+}
